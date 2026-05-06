@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Dashboard des agents programmés de Guillaume",
-    "derniere_maj": "2026-05-06T20:00:00",
+    "derniere_maj": "2026-05-07T08:00:00",
     "version": "1.0"
   },
   "agents": {
@@ -126,9 +126,9 @@
         "description": "Relit CLAUDE.md et MEMORY.md pour detecter les infos manquantes, contradictions ou regles dormantes.",
         "schedule": "1er du mois, 8h",
         "actif": true,
-        "dernier_run": "",
-        "statut": "attente",
-        "resume": "Prochain run le 01/06/2026"
+        "dernier_run": "2026-05-07T08:00:00",
+        "statut": "succes",
+        "resume": "Audit mai 2026 — 5 trous d'info, 11 points stales, decoupage MEMORY.md propose. Tache Todoist 6gXWCcR3J9QcjCFh"
       }
     ]
   }
