@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Dashboard des agents programmés de Guillaume",
-    "derniere_maj": "2026-05-07T08:00:00",
+    "derniere_maj": "2026-05-07T07:00:00",
     "version": "1.0"
   },
   "agents": {
@@ -9,7 +9,7 @@
       {
         "id": "agent-emails",
         "nom": "Agent emails",
-        "description": "Scanne Gmail et trie les emails en 11 missions : colis, courrier, RDV, Jean Riviere, RGNR, emails importants, newsletters, finance, inscriptions Kooneo, Substack. Cree les taches Todoist et evenements Calendar.",
+        "description": "Scanne Gmail et trie les emails en 11 missions : colis, courrier, RDV, Jean Dedieu, etc.",
         "schedule": "3x/jour : 10h, 14h, 19h",
         "actif": true,
         "dernier_run": "2026-05-06T19:01:14",
@@ -19,37 +19,37 @@
       {
         "id": "agent-memoire",
         "nom": "Agent memoire",
-        "description": "Capture les notes taguees Memoires dans Todoist et Apple Notes, puis les consolide dans Notes/inbox.md.",
+        "description": "Capture les notes taguees Memoires dans Todoist et Apple Notes, puis les consolide dans MEMORY.md",
         "schedule": "3x/jour : 7h, 13h, 19h",
         "actif": true,
-        "dernier_run": "2026-05-06T19:06:25",
+        "dernier_run": "2026-05-07T07:00:00",
         "statut": "succes",
-        "resume": "Capture memoires Todoist + Apple Notes"
+        "resume": "0 note a traiter (Todoist Memoires vide, Apple Notes toutes deja traitees avec ✅)"
       },
       {
         "id": "agent-moderation",
         "nom": "Agent moderation",
-        "description": "Modere les groupes Facebook Acouphenes et Kooneo. Approuve les publications et adhesions serieuses, laisse les douteuses en attente avec une tache Todoist.",
+        "description": "Modere les groupes Facebook Acouphenes et Kooneo. Approuve les publications et adhesions, refuse les spams evidents.",
         "schedule": "Tous les jours, 10h17",
         "actif": true,
-        "dernier_run": "2026-05-06T10:17:25",
+        "dernier_run": "2026-05-07T10:25:00",
         "statut": "succes",
-        "resume": "1 post approuve, 1 en attente, 1 adhesion approuvee"
+        "resume": "Run 2 - 2 posts Acouphenes refuses (Nass Ouww : NAC complements + bandeau Amazon affilie). 0 adhesion. SKILL mis a jour : refus du spam evident desormais autorise."
       },
       {
         "id": "agent-kooneo",
         "nom": "Agent kooneo",
-        "description": "Genere chaque matin une newsletter Kooneo en autonomie. Choisit le sujet par rotation parmi les articles HelpScout et tickets recents.",
+        "description": "Genere chaque matin une newsletter Kooneo en autonomie. Choisit le sujet par rotation, s'appuie sur les articles HelpScout et tickets recents.",
         "schedule": "Tous les jours, 8h39",
         "actif": true,
-        "dernier_run": "2026-05-06T08:36:50",
+        "dernier_run": "2026-05-07T08:43:00",
         "statut": "succes",
-        "resume": "Newsletter generee et postee en commentaire"
+        "resume": "1 newsletter redigee (parcours d'achat / confiance qui fuit) + 1 commentaire de non-redaction (workflow Substack finalise sur les emails en spam)"
       },
       {
         "id": "agent-meteo",
         "nom": "Agent meteo",
-        "description": "Recupere la meteo de Ballancourt pour planifier la promenade du chien. Cree un rappel iOS et une tache Todoist avec le creneau optimal.",
+        "description": "Recupere la meteo de Ballancourt pour planifier la promenade du chien. Cree un evenement dans Calendar.",
         "schedule": "Tous les jours, 8h09",
         "actif": false,
         "dernier_run": "2026-05-06T08:02:02",
@@ -59,7 +59,7 @@
       {
         "id": "briefing-matinal",
         "nom": "Briefing matinal",
-        "description": "Compile un briefing du matin : agenda du jour, taches Todoist prioritaires, emails importants, activite recente dans Cowork.",
+        "description": "Compile un briefing du matin : agenda du jour, taches Todoist prioritaires, meteo.",
         "schedule": "Tous les jours, 9h03",
         "actif": false,
         "dernier_run": "2026-04-29T09:17:23",
@@ -71,7 +71,7 @@
       {
         "id": "agent-veille",
         "nom": "Agent veille",
-        "description": "Veille editoriale sur 4 thematiques : LinkedIn (Dr Dedieu), articles (Acouphenes, Oleron, Perroquets), idees de contenu, et Telegram.",
+        "description": "Veille editoriale sur 4 thematiques : LinkedIn (Dr Dedieu), articles (Acouphenes, Kooneo), GAFAM.",
         "schedule": "Lundi, 9h39",
         "actif": true,
         "dernier_run": "2026-05-04T11:14:41",
@@ -81,7 +81,7 @@
       {
         "id": "agent-sport",
         "nom": "Agent sport",
-        "description": "Cherche les matchs de la semaine pour le PSG, le XV de France et l'Equipe de France. Cree les evenements Calendar et taches Todoist.",
+        "description": "Cherche les matchs de la semaine pour le PSG, le XV de France et l'Equipe de France de football.",
         "schedule": "Lundi, 10h14",
         "actif": true,
         "dernier_run": "2026-05-04T10:19:04",
@@ -91,7 +91,7 @@
       {
         "id": "agent-support",
         "nom": "Agent support",
-        "description": "Exporte tous les articles HelpScout Kooneo dans Dropbox et pousse sur GitHub via un script dedie.",
+        "description": "Exporte tous les articles HelpScout Kooneo dans Dropbox et pousse sur GitHub.",
         "schedule": "Lundi, 8h06",
         "actif": true,
         "dernier_run": "2026-05-06T13:08:16",
@@ -101,7 +101,7 @@
       {
         "id": "agent-verifications",
         "nom": "Agent verifications",
-        "description": "Verifie que tous les outils et connexions sont operationnels : MCP, API, extensions Chrome, integrateurs.",
+        "description": "Verifie que tous les outils et connexions sont operationnels : MCP, API, extensions.",
         "schedule": "Lundi, 8h01",
         "actif": true,
         "dernier_run": "2026-05-04T11:39:28",
@@ -111,7 +111,7 @@
       {
         "id": "agent-menage-numerique",
         "nom": "Agent menage numerique",
-        "description": "Fait le tri dans Apple Notes, le dossier Downloads, synchronise les prompts Notion, et route les articles Todoist vers Notes ou Airtable.",
+        "description": "Fait le tri dans Apple Notes, le dossier Downloads, synchronise les prompts vers Notion.",
         "schedule": "Lundi, 8h24",
         "actif": true,
         "dernier_run": "2026-05-04T08:24:38",
@@ -123,12 +123,12 @@
       {
         "id": "agent-audit-memoire",
         "nom": "Agent audit memoire",
-        "description": "Relit CLAUDE.md et MEMORY.md pour detecter les infos manquantes, contradictions ou regles dormantes.",
+        "description": "Relit CLAUDE.md et MEMORY.md pour detecter les infos manquantes, contradictions et regles dormantes.",
         "schedule": "1er du mois, 8h",
         "actif": true,
-        "dernier_run": "2026-05-07T08:00:00",
+        "dernier_run": "2026-05-07T08:05:00",
         "statut": "succes",
-        "resume": "Audit mai 2026 — 5 trous d'info, 11 points stales, decoupage MEMORY.md propose. Tache Todoist 6gXWCcR3J9QcjCFh"
+        "resume": "Audit mai 2026 — 5 questions ouvertes, 6 points stales/contradictoires, 5 regles dormantes"
       }
     ]
   }
