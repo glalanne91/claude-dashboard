@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Dashboard des agents programmés de Guillaume",
-    "derniere_maj": "2026-05-08T07:25:00",
+    "derniere_maj": "2026-05-08T07:30:00",
     "version": "1.0"
   },
   "agents": {
@@ -22,7 +22,7 @@
         "description": "Capture les notes taguees Memoires dans Todoist et Apple Notes, puis les consolide dans MEMORY.md",
         "schedule": "3x/jour : 7h, 13h, 19h",
         "actif": true,
-        "dernier_run": "2026-05-08T07:25:00",
+        "dernier_run": "2026-05-08T07:30:00",
         "statut": "succes",
         "resume": "0 note brute a traiter (Todoist Memoires vide, Apple Notes toutes deja prefixees ✅)"
       },
